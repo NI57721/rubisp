@@ -1,0 +1,27 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 3.1
+
+AsciiComments:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Lambda:
+  Enabled: false
+
+Layout/TrailingEmptyLines:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/EndOfLine:
+  EnforcedStyle: lf
+
+Layout/LineLength:
+  Max: 120
+
