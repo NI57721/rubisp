@@ -6,7 +6,7 @@ class TestList < Minitest::Test
   def setup
     @empty = Rubisp::List.new
     @single_cell = Rubisp::List.new(Rubisp::Atom.new(1))
-    @multiple_cells = Rubisp::List.new(*(0..10).map{ Rubisp::Atom.new(_1) })
+    @multiple_cells = Rubisp::List.new(*(0..10).map { Rubisp::Atom.new(_1) })
   end
 
   def test_car
@@ -18,7 +18,7 @@ class TestList < Minitest::Test
   def test_cdr
     assert_equal Rubisp::Nil, @empty.cdr
     assert_equal Rubisp::Nil, @single_cell.cdr
-    assert_equal Rubisp::List.new(*(1..10).map{ Rubisp::Atom.new(_1) }),
+    assert_equal Rubisp::List.new(*(1..10).map { Rubisp::Atom.new(_1) }),
       @multiple_cells.cdr
   end
 
