@@ -6,11 +6,14 @@ AllCops:
   SuggestExtensions: false
   TargetRubyVersion: 3.0
 
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
 Layout/EndOfLine:
   EnforcedStyle: lf
-
-# Layout/LineLength:
-#   Max: 80
 
 Layout/TrailingEmptyLines:
   Enabled: false
@@ -25,6 +28,9 @@ Style/Documentation:
   Enabled: false
 
 Style/FormatStringToken:
+  Enabled: false
+
+Metrics/MethodLength:
   Enabled: false
 
 Gemspec/DeprecatedAttributeAssignment: # new in 1.30

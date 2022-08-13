@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class TestRubisp < Minitest::Test
+class TestCons < Minitest::Test
   def setup
     @cons = Rubisp::Cons.new(1, 2)
     @other = Rubisp::Cons.new(3, 4)

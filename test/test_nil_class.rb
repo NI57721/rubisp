@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class TestRubisp < Minitest::Test
+class TestNilClass < Minitest::Test
   def setup
     @nil = Rubisp::Nil
   end

@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class TestRubisp < Minitest::Test
+class TestTrueClass < Minitest::Test
   def setup
     @t = Rubisp::T
   end
