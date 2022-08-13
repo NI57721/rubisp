@@ -21,7 +21,7 @@ module Rubisp
       other.is_a?(Cons) ? car == other.car && cdr == other.cdr : false
     end
 
-    alias eq ==
+    alias eql? ==
   end
 end
 

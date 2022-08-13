@@ -15,5 +15,14 @@ class TestNilClass < Minitest::Test
     assert_equal 'nil', @nil.to_s
     assert_equal 'nil', @nil.inspect
   end
+
+  def test_eq
+    assert_equal @nil, @nil
+    assert_equal @nil, Rubisp::NilClass.instance
+    assert_equal @nil, Rubisp::List.new
+    assert_not_equal @nil, nil
+    assert_not_equal @nil, false
+    assert_not_equal @nil, Rubisp::T
+  end
 end
 
