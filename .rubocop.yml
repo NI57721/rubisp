@@ -8,12 +8,14 @@ AllCops:
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
-
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 
 Layout/EndOfLine:
   EnforcedStyle: lf
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
 
 Layout/TrailingEmptyLines:
   Enabled: false
